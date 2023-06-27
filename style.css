@@ -342,3 +342,31 @@ nav ul li a:hover::after{
 .work1:hover .imagetext{
     height: 100%;
 }
+
+
+/* Contact Me */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.contact-left{
+    position: relative;
+    left: 162px;
+    top: 100px;
+}
+
+.contact-right{
+    position: relative;
+    left:199px;
+    top:100px;
+}
+
+
+.contact-left h1{
+    color: aqua;
+}
