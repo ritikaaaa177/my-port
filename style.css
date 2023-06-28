@@ -91,8 +91,121 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: aqua
+    color: aqua;
 }
+
+
+/* About me */
+
+
+/* #about{
+    margin-top: 188px;
+    max-width: 80%;
+}
+
+.container{
+    max-width: 80%;
+}
+
+.about-col-2{
+
+    position: relative;
+    bottom: 380px;
+    left: 258px;
+}
+
+.about-col-2 img{
+    width: 516px;
+    height: 441px;
+    position: relative;
+    top: 355px;
+    right: 308px;
+ 
+}
+
+.about-col-1{
+    position: relative;
+    width: 409px;
+     margin-right: 56px; 
+     left: -21px; 
+     right: 72px;
+} 
+
+ .about-col-1 p{
+    color: white;
+    position: relative;
+    right: 228px;
+     justify-content: center; 
+     text-align:justify; 
+     margin-top: 19px; 
+    top: 87px; 
+
+ }  */ 
+
+.about{
+  margin-top: 231px;
+  max-width: 80%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    max-width: 80%;
+    /* flex-wrap:wrap; */
+}
+
+.column1{
+
+    position: relative;
+    left: 90px;
+
+}
+.row .column1 h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 63px;
+    color: aqua;
+    
+}
+
+.column1 p{
+    width: 663px;
+    margin-top: 23px;
+}
+
+.column2{
+    position: relative;
+    left: 286px;
+}
+
+
+.column1 h2,p{
+    color: white;
+}
+
+
+.column2 img{
+    width: 477px;
+    height: 452px;
+}
+
+.info{
+    display: flex;
+    margin: 20px 0 40px;
+    color: white;
+}
+
+
+/* h2{
+    color: aqua;
+    margin-left: -341px;
+    font-size: 7vh;
+    position: relative;
+    top: 70px;
+    font-weight: 600;
+    left:160px;
+} */
 
  .info-link{
     margin-right: 50px;
@@ -270,8 +383,32 @@ form input, form textarea{
 
 }
 
+/* .contact-right{
+    position: relative;
+    left: 653px;
+    top: -87px;
+} */
 
 
+/* form input, form textarea{
+    display: block;
+    border:0;
+    outline: none;
+    background: #262626;
+  
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+   
+} */
+
+ /* form textarea{
+   width: 100%;
+   position: relative;
+   left: 9px;
+ } */
 
  form button{
     display: block;
@@ -326,4 +463,3 @@ form input, form textarea{
     font-weight: 400;
     /* margin-top: 20px; */
 } 
-
