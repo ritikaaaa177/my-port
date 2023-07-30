@@ -7,6 +7,25 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm() {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/IkMS3HLH5g8GPmBJ/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -17,14 +36,14 @@
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Certification</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#mycontact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="header-text">
+      <div id="home" class="header-text">
         <h1 class="text1"><span><em>Ritika</em></span> <em>Kumar</em></h1>
         <p class="text1">Hi, I am a frontend developer from India</p>
       </div>
@@ -35,7 +54,7 @@
 
   <!-- About  -->
 
-  <div class="about">
+  <div id="about-me" class="about">
 
     <div class="row">
       <div class="column1">
@@ -77,7 +96,6 @@
 
         <div class="list-contents" id="experience">
           <ul>
-            <li><span>June 2023</span><br>Operations Executive</li>
             <li><span>January 2023- May 2023</span><br>Technical Freelancer</li>
             <li><span>September 2022- November2022</span><br>Management trainee intern</li>
             <li><span>December 2021- December 2022</span><br>Technical Content Lead</li>
@@ -113,7 +131,7 @@
           <p><em>This community website helps people in curing their mental health issues. It provides a chatbot to
               talk, blogs, videochats
               option and doctors contacts.</em></p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/ritikaaaa177/shantivan"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
 
@@ -123,7 +141,8 @@
           <h3>Heart failure predictor model</h3>
           <p><em>This model predicts the heart failure of people which means how much they are prone to heart
               failure.</em></p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/ritikaaaa177/machine-learning-project"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
 
@@ -134,7 +153,7 @@
           <p><em>This is a portfolio website that describes all about myself like my projects, my certifications,
               acheivements,
               experience, skills and education.</em></p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/ritikaaaa177/my-port"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
@@ -145,7 +164,7 @@
   <!-- --------------------------------contact form--------------------------------------------------- -->
 
 
-  <div class="contact">
+  <div id="mycontact" class="contact">
     <div class="contact-left">
       <h1>Contact Me</h1>
       <p>kumarritika666@gmail.com</p>
@@ -161,12 +180,12 @@
     </div>
 
     <div class="contact-right">
-      <form>
+      <form id="myForm">
 
         <input type="text" name="Name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your message"></textarea>
-        <button type="Submit">Submit</button>
+        <button onclick="SubForm()">Submit</button>
       </form>
     </div>
 
