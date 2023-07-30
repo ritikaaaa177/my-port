@@ -478,6 +478,10 @@ form input, form textarea{
         background-size: 100% auto;
     }
 
+    nav ul{
+        margin: auto;
+    }
+
     .container {
         padding: 10px 5%;
         top: 0;
